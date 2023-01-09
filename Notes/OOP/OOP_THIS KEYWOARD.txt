@@ -1,0 +1,4 @@
+============================
+	THIS KEYWORD
+============================
+> Mereferensikan pada suatu instace yang dibuat

@@ -1,0 +1,8 @@
+======================
+	METHODS
+======================
+> Sebuah function dalam sebuah class atau object.
+
+> Getter dan setter untuk memperoleh dan 
+mendapatkan data dari suatu field atau
+property.

@@ -1,0 +1,9 @@
+===================================
+	SETTER DAN GETTER
+===================================
+> Setter adalah member function atau method yang dipakai
+untuk memberikan nilai ke dalam sebuah data member.
+
+> Getter adalah member function yang dipakai
+untuk menampilkan nilai data member.
+---------------------------------------------------------

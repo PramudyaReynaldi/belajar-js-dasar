@@ -1,0 +1,8 @@
+===========================================
+	STATIC METHODS & PROPERTY
+===========================================
+> Cara akses properties dan methods tanpa membuat 
+instance dulu
+
+> Menempel pada class yang dibuat
+-------------------------------------------

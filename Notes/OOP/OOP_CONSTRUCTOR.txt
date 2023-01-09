@@ -1,0 +1,10 @@
+============================
+	CONSTRUCTOR
+============================
+Constructor adalah suatu method atau function
+spesial yang terpanggil saat membuat instance
+menggunakan class.
+
+Ringkasnya adalah suatu method atau function yang
+dijalankan pertama kali ketika object dibuat
+---------------------------------------------------------

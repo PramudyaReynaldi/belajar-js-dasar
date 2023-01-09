@@ -1,0 +1,9 @@
+FITUR - FITUR DALAM CLASS BODY
+==============================
+> Constructor
+> Statict initialization block
+> Methods
+> Statict methods & properties
+> This keyword
+> Properties
+> Field (public & private)

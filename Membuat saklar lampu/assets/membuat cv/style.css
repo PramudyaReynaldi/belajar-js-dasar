@@ -1,0 +1,97 @@
+
+body {
+    font: 16px/28px arial, sans-serif;
+    background-image: url(download.png);
+    color: #333;
+}
+
+.container {
+    background-color: white;
+    width: 800px;
+    margin: auto;
+}
+
+
+/* Header */
+
+.header {
+    padding: 20px;
+    width: 700px;
+    margin-left: 25px;
+    height: 70px;
+    margin-bottom: -20px;
+}
+
+.header .judul {
+    font-size: 40px;
+    font-weight: bold;
+    height: 70px;
+}
+
+/* Header end */
+
+/* Navbar */
+.navbar a {
+    text-decoration: none;
+    color: salmon;
+    margin-left: -20px;
+}
+
+.navbar ul li {
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 10px;
+    padding-bottom: 1px;
+    padding-left: 20px;
+}
+
+.navbar a:hover {
+    background-color: lightskyblue;
+}
+/* Navbar end */
+
+/* Hero image */
+.hero img {
+    width: 800px;
+    margin-left: 1px;
+    border-top: 5px solid salmon;
+    border-bottom: 5px solid lightblue
+}
+/* Hero image end */
+
+/* Content */
+.content .judul-content h3{
+    margin-left: 19px;
+    font-size: 32px;
+    margin-bottom: -40px;
+}
+
+.content .judul-content p {
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+.judul-content a{
+    text-decoration: none;
+}
+
+.content .isi-content {
+    margin-left: 15px;
+}
+/* Content end */
+
+/* Footer */
+.footer {
+    background-color: #333;
+    padding: 10px;
+}
+
+.penutup {
+    color: #eaeaea;
+    text-align: center;
+    font-size: 15px;
+}
+
+
+

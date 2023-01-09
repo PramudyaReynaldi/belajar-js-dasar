@@ -1,0 +1,9 @@
+=========================
+	FIELDS
+=========================
+> Seperti variabel dalam class
+> Dideklarasikan tanpa let, const, var.
+> Terdapat dua visibility:
+	. Public
+	. Private
+-----------------------------------------

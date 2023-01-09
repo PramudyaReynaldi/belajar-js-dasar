@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membuat saklar lampu</title>
+</head>
+<body>
+    <img src="assets/off.gif" alt="" id="lampu1">
+    <img src="assets/off.gif" alt="" id="lampu2">
+    <h1>Saklar lampu on off</h1>
+    <button onclick="saklar('on')">Nyalakan lampu</button>
+    <button onclick="saklar('off')">Matikan lampu</button>
+    
+    <script>
+        function saklar(param){
+            let lampu1 = document.getElementById("lampu1");
+            let lampu2 = document.getElementById("lampu2");
+
+            if(param === "on"){
+                lampu1.src = "assets/on.gif";
+                lampu2.src = "assets/on.gif";
+            }
+            if(param === "off"){
+                lampu1.src = "assets/off.gif";
+                lampu2.src = "assets/off.gif";
+                
+            }
+        }
+    </script>
+</body>
+</html>

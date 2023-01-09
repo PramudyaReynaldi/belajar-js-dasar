@@ -1,0 +1,7 @@
+=======================
+	ARRAY
+=======================
+> pop() = untuk menghapus element akhir bagian pada array.
+> push() = untuk menambahkan element AKHIR pada array.
+> shift() = untuk menghapus element pertama pada bagian array.
+> unshift() = untuk menambahkan element PERTAMA pada array
