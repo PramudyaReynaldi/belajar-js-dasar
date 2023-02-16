@@ -11,10 +11,10 @@
 let a = 10;
 
 function tes () {
-    if(let i = 0; i <= ){
-        sa}
-    let a = 20;
-    console.log(a)
+    if(let i = 0; i <= 20; i++ ){
+        let a = 20;
+        console.log(a)
+    }
 }
 console.log(a);
 tes();
