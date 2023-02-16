@@ -4,11 +4,8 @@
 
 // * Contoh dasar :
 
-// const myNames = ["Agung", "Hendra", "Udin", "Aldi"];
-
-// console.log(myNames);
-
-
+// const myNames = ["Agung", "Hendra", "Udin", "Aldi"]; 
+// console.log(myNames); // Output: 'Agung', 'Hendra', 'Udin', 'Aldi'
 
 
 
@@ -34,8 +31,6 @@
 
 // console.log(menuMakanan[0]); // Output = Ketoprak
 // console.log(menuMakanan[2]); // Output = Ayam Geprek
-
-
 
 
 
@@ -83,13 +78,10 @@
 
 
 
-
-
 // ============================== Array Methods ==========================================
 
 
-// * Untuk menambahkan index ke dalam array, kita bisa menggunakan 
-// * method push(). Fungsi push ini akan menambahkan data di akhir array :
+// * push() => menambahkan data di akhir array :
 
 // const namaMahasiswa = ["Udin", "ALdi", "Ucok", "Usop"];
 
@@ -98,8 +90,7 @@
 
 
 
-// * Untuk mengeluarkan index terakhir dari array, kita bisa 
-// * gunakan method pop() :
+// * pop() => Untuk mengeluarkan index terakhir dari array, kita bisa
 
 // const daftarAnakBadung = ["Ucok", "Kupret", "Kacrut", "Kucay"];
 
@@ -108,7 +99,7 @@
 
 
 
-// * Method shift() digunakan untuk mengeluarkan elemen pertama dari array :
+// * shift() => Untuk mengeluarkan elemen pertama dari array
 
 // const namaSiswa = ["Dafa", "Bima", "Hafidz"];
 
@@ -117,7 +108,8 @@
 
 
 
-// * unshift() digunakan untuk menambahkan elemen di awal array :
+// * unshift() => Untuk menambahkan elemen di awal array 
+
 // const daftarHadir = ["Shinta", "Dela", "Puspa", "Sukri"];
 
 // daftarHadir.unshift("Kucrut");
@@ -125,13 +117,29 @@
 
 
 
-/**
- * * Untuk menghapus index, gunakan metode splice() seperti ini :  
- */
+// * splice() => Untuk menghapus data pada index tertentu
+
 // const myArray = ["push", "pop", "unshift", "shift"];
 
 // myArray.splice(2, 1);
 // console.log (myArray);
+
+// * filter() => Untuk menyaring data dari array
+// const number = [1, 2, 3, 4, 5, 6];
+// // Mengambil data yang hanya habis dibagi dua saja dengan arrow function
+// const filterArray = number.filter((item) => {
+//     return item % 2 === 0
+// });
+// console.log(filterArray); // Output: 2, 4, 6
+
+// * Contoh kedua
+// const angka = [21, 32, 43, 54, 65, 76, 87];
+// // Mengambil data yang tidak habis dibagi dua saja
+// const filterGanjil = angka.filter((item) => {
+//     return item % 2 != 0
+// });
+// console.log(filterGanjil); // Output: 21, 43, 65, 87
+
 
 /**
  * * Array dengan for of :
@@ -157,7 +165,7 @@
  * * Lalu bagaimana jika kita ingin menghapus data dari array? Sama seperti object, kita 
  * * bisa menggunakan keyword delete :
  */
-const thisArray = [0, 1, 2, 3, 4];
+// const thisArray = [0, 1, 2, 3, 4];
 
-delete thisArray [1]; // Menghapus index [1]
-console.log(thisArray); // Output:  0, <1 empty item>, 2, 3, 4 
+// delete thisArray [1]; // Menghapus index [1]
+// console.log(thisArray); // Output:  0, <1 empty item>, 2, 3, 4 
