@@ -1,28 +1,61 @@
-let dataDiri = {
+// ====================================== Object =========================================
 
-    firstName : "Pramudya",
-    lastName : "Reynaldi",
-    age : 20,
-    hobby : "Music",
-    country : "Indonesia",
-    favoriteFood : "Bakso",
-    favoriteDrink : "Cofee",
-    "Tempat tinggal" : "Tangerang",
-    married : false,
+const dataDiri = {
+    firstName: "Pramudya",
+    lastName: "Reynaldi",
+    age: 20,
+    hobby: "Music",
+    country: "Indonesia",
+    favoriteFood: "Bakso",
+    favoriteDrin: "Cofee",
+    "Tempat tinggal": "Tangerang",
+    isMarried: false,
+    pets: [
+        {
+            name: "Olive",
+            speciesName: "Cat"
+        },
+        {
+            name: "Puli",
+            speciesName: "Cat"
+        }
+    ]
 }; 
 
-// console.log(dataDiri);
+console.log(dataDiri); // Output: Semua object
+
+// * Untuk memanggil nilai dari sebuah object, kita bisa
+// * gunakan square bracket seperti array, atau kita bisa
+// * menggunakan dot notation (.)
+console.log(dataDiri.firstName); // Output: Pramudya 
+console.log(dataDiri["age"]); // Output: 20
+console.log(dataDiri.pets[0].name); // Output: Olive
 
 /**
  * * Kemudian untuk mengakses nilai dari properti object, kita dapat memanggil 
- * * nama object lalu tanda titik dan diikuti nama propertinya. Contoh :
+ * * nama object lalu tanda titik dan diikuti nama propertinya (dot operator/dot notation). Contoh :
  */
-// console.log(`Halo, nama saya ${dataDiri.firstName} ${dataDiri.lastName}`);
-// console.log(`Umur saya ${dataDiri.age}`);
-// console.log(`Hobby saya ${dataDiri.hobby}`);
-// console.log(`Saya berasal dari negara ${dataDiri.country}`);
-// console.log(`Makanan kesukaan saya adalah ${dataDiri.favoriteFood}`);
-// console.log(`Minuman kesukaan saya adalah ${dataDiri.favoriteDrink}`);
+const vespa = {
+    name: "Denok",
+    warna: "Biru",
+    mesin: "Super",
+    blok: "Lobang 5",
+    ring: 8,
+    jelajah: [
+        {
+            tempat: "Bandung",
+            perjalanan: "3 hari"
+        },
+        {
+            tempat: "Anyer",
+            perjalanan: "1 hari"
+        }
+    ]
+}
+console.log(`Halo, saya punya vespa yang bernama ${vespa.name}`);
+console.log(`Vespa saya berwarna ${vespa.warna}`);
+console.log(`Saya sudah menjelajah di ${vespa.jelajah[1].tempat} dalam ${vespa.jelajah[1].perjalanan}`);
+
 
 
 /**

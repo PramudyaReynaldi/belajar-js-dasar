@@ -39,9 +39,11 @@
 
 
 
+// * Mengubah isi dari array
 
-
-
+// let bahasaPemrograman = ["JavaScript", "C++", "Java", "Phyton"];
+// bahasaPemrograman[1] = "Kotlin" // Mengubah isi index ke 1 C++ jadi Kotlin  
+// console.log(bahasaPemrograman); // Output: Kotlin
 
 
 
@@ -125,6 +127,7 @@
 // console.log (myArray);
 
 // * filter() => Untuk menyaring data dari array
+
 // const number = [1, 2, 3, 4, 5, 6];
 // // Mengambil data yang hanya habis dibagi dua saja dengan arrow function
 // const filterArray = number.filter((item) => {
@@ -139,6 +142,27 @@
 //     return item % 2 != 0
 // });
 // console.log(filterGanjil); // Output: 21, 43, 65, 87
+
+
+
+// * includes() => Untuk mengecek apakah sebuah data ada didalam array atau tidak.
+// * Biasanya digunakan untuk melakukan pencarian dan memastikan data sudah ada didalam array.
+
+// const buah = ["Apel", "Mangga", "Jeruk", "Melon"];
+// const adaMangga = buah.includes("Mangga"); // Mengecek apakah ada mangga di dalam array buah
+// console.log(adaMangga); // Output: true
+// const adaSayuran = buah.includes("Bayam"); // Mengecek apakah ada Bayam di dalam array buah
+// console.log(adaSayuran); // Output: false
+
+
+// * short() => Untuk mengurutkan data pada array
+
+// const alphabet = ["a", "f", "z", "e", "r", "g"];
+// const angka = [3, 1, 2, 6, 8, 5];
+
+// console.log(alphabet.sort());
+// console.log(angka.sort());
+
 
 
 /**
