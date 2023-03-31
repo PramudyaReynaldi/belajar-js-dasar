@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Selector</title>
+</head>
+<body>
+    <!-------------------------------- getElementById() ---------------------------------------->
+    <section id="app">
+        <h2>Menggunakan document.getElementById()</h2>
+    </section>
+    <div id="demo">
+        <h1>Halo semua, saya menggunakan document.getElementById()</h1>
+    </div>
+    <div id="inner"></div>
+
+
+
+
+    <!----------------------------- getElementsByClassName() ------------------------------------->
+    <div class="green-text">
+        <h2>Menggunakan document.getElementsByClassName()</h2>
+    </div>
+
+    <p class="paragraf">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Et labore adipisci iusto necessitatibus nulla nesciunt porro voluptate quidem illum veniam.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, totam!
+    </p>
+    <p class="paragraf">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Et labore adipisci iusto necessitatibus nulla nesciunt porro voluptate quidem illum veniam.
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, animi.
+    </p>
+    <p class="paragraf">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Et labore adipisci iusto necessitatibus nulla nesciunt porro voluptate quidem illum veniam.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, nostrum?
+    </p>
+
+    <h1 id="judul">Membuat animasi tulisan</h1>
+    <p class="text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit corporis ad distinctio reprehenderit quas autem quo id? Ad quas aliquid saepe quo explicabo voluptatum facere eaque, voluptas, ut possimus repudiandae iure. Perferendis, et nemo rem perspiciatis vel ratione ut officiis ad maiores numquam obcaecati, a sint totam dolorum similique cum!
+    </p>
+    <p class="text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit corporis ad distinctio reprehenderit quas autem quo id? Ad quas aliquid saepe quo explicabo voluptatum facere eaque, voluptas, ut possimus repudiandae iure. Perferendis, et nemo rem perspiciatis vel ratione ut officiis ad maiores numquam obcaecati, a sint totam dolorum similique cum!
+    </p>
+    <p class="text">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit corporis ad distinctio reprehenderit quas autem quo id? Ad quas aliquid saepe quo explicabo voluptatum facere eaque, voluptas, ut possimus repudiandae iure. Perferendis, et nemo rem perspiciatis vel ratione ut officiis ad maiores numquam obcaecati, a sint totam dolorum similique cum!
+    </p>
+
+    <!---------------------------------- getElementsByTagName() ----------------------------------->
+    <div class="tag-name">
+        <p>Menggunakan document.getElementsByTagName()</p>
+    </div>
+
+
+    <!------------------------------------ querrySelector() ---------------------------------------->
+    <div class="querry-selector">
+        <h2>Menggunakan document.querrySelector()</h2>
+    </div>
+
+
+
+    <br>
+
+    <label>Masukan warna background: </label>
+    <input type="color" id="bg-color">
+
+    <!-------------------------------------- JavaScript Code -------------------------------------------->
+    <script>
+
+        // document.write() => untuk menulis output ke dokumen HTML
+        // document.write("<h2>Menggunakan document.write()</h2>")
+        // document.write("Hello World")
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // document.getElementById() => Memilih elemen berdasarkan atribut id
+        let app = document.getElementById("app")
+
+        // Mengisi teks ke dalam elemen
+        app.innerText = "Ini adalah document.getElementById()"
+
+        // Memberikan CSS ke elemen
+        app.style.backgroundColor = "yellow"
+        app.style.padding = "12px"
+
+
+        const elm = document.getElementById("demo")
+        document.getElementById("inner").innerHTML = "Selamat mencoba!"
+
+        elm.style.color = "blue"
+        elm.style.backgroundColor = "cyan"
+        elm.style.padding = "12px"
+
+        const elm1 = document.getElementById("inner")
+        elm1.style.color = "blue"
+        elm1.style.backgroundColor = "cyan"
+        elm1.style.padding = "12px"
+        
+        
+        
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // document.getElementsByClassName() => Memilih elemen berdasarkan atribut class
+        let className = document.getElementsByClassName("green-text")
+
+        // Memberikan CSS kedalam class className
+        className[0].style.color = "green"
+        className[0].style.backgroundColor = "orange"
+        className[0].style.padding = "12px"
+        
+
+        let par = document.getElementsByClassName("paragraf");
+        par[0].style.color = "red"
+        par[1].style.color = "blue"
+        par[2].style.color = "green"
+
+        par[0].style.backgroundColor = "cyan"
+        par[1].style.backgroundColor = "cyan"
+        par[2].style.backgroundColor = "cyan"
+
+        par[0].style.padding = "20px"
+        par[1].style.padding = "20px"
+        par[2].style.padding = "20px"
+
+        
+
+        // Membuat animasi tulisan dengan setInterval dan setTimeOut
+        let jdl = document.getElementById("judul").style.backgroundColor = "yellow"
+        let animasi = document.getElementsByClassName("text")
+
+        setInterval(function() {
+            animasi[0].style.color = "red"
+            animasi[1].style.color = "yellow"
+            animasi[2].style.color = "green"
+
+            setTimeout(function(){
+            animasi[0].style.color = "black"
+            animasi[1].style.color = "black"
+            animasi[2].style.color = "black"
+
+            }, 500)
+        }, 1000)
+
+
+
+
+
+
+
+
+
+
+
+        // document.getElementsByTagName() => Memilih elemen berdasarkan nama tag
+        let tagName = document.getElementsByTagName("p")
+
+        // Memberikan CSS kedalam tag name
+        tagName[6].style.fontSize = "25px"
+        tagName[6].style.backgroundColor = "yellow"
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+        // document.querrySelector() => Memilih elemen berdasarkan query
+        let querry = document.querySelector(".querry-selector").style = "color: red"
+
+
+
+
+
+
+
+
+
+
+        
+        let background = document.getElementById("bg-color")
+        background.addEventListener("change", event => {
+            document.body.style.backgroundColor = background.value;
+        })
+    </script>
+</body>
+</html>

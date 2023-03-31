@@ -154,20 +154,21 @@ console.log("\n\n\n")
 
 // ========================================= OOP Properties ===============================================
 
-// class MyClass {
-//     constructor (param1 = `Dicoding`, param2 = `Indonesia`) {
-//         this.param1 = param1;
-//         this.param2 = param2;
-//     }
-// }
+class myProperties {
+    constructor (param1 = `Dicoding`, param2 = `Indonesia`) {
+        this.param1 = param1;
+        this.param2 = param2;
+    }
+}
 
-// const myClass = new MyClass();
-// console.log(myClass.param1); // Output: "Dicoding"
-// console.log(myClass.param2); // Output: "Indonesia"
-
-
+const myPropertiesIsRun = new myProperties();
+console.log(myPropertiesIsRun.param1); // Output: "Dicoding"
+console.log(myPropertiesIsRun.param2); // Output: "Indonesia"
 
 
+
+// Jarak output
+console.log("\n\n\n")
 
 
 
