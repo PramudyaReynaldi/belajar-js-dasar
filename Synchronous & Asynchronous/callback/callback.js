@@ -19,3 +19,6 @@ function usersCallback(users) {
 
 // Memanggil getUsers dengan usersCallback sebagai parameter
 getUsers(usersCallback);
+
+
+// ================ Callback Hell ===============
